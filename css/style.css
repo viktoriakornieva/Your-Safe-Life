@@ -42,6 +42,12 @@ body{
               radial-gradient(900px 600px at 80% 20%, rgba(255,255,255,0.08), transparent 55%),
               linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
   line-height:1.55;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img{ max-width:100%; display:block; }
