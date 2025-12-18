@@ -10,7 +10,7 @@
   --bg:#0B2A4A;
   --bg-2:#0A2440;
   --card:#FFFFFF;
-  --text:#0A1F33;
+  --text:#000080;
   --text-2:#2A3A4A;
   --muted:#5E7286;
   --border:rgba(10,31,51,0.12);
@@ -572,3 +572,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* Desktop-only layout note:
    No mobile layout rules requested. If opened on small screens, it will still render,
    but is optimized for typical laptop/desktop widths. */
+.card .section-title {
+  color: var(--text);
+}
