@@ -491,6 +491,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .form{
   display:grid;
   gap:12px;
+  padding: 12px;
 }
 .field{
   display:grid;
