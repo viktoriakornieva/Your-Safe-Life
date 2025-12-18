@@ -1,0 +1,115 @@
+<!-- Сайт розроблено студенкою Корнєвою Вікторією Дмитрівною, група ФЕМП 3-13 -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор — Your Safe Life</title>
+  <meta name="description" content="Онлайн калькулятор страхового платежу Your Safe Life. Оберіть тип страхування, термін, суму та додаткові опції." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <span class="brand-name">Your Safe Life</span>
+          <span class="brand-tagline">страхові рішення для життя без зайвих ризиків</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Головна</a>
+        <a class="nav-link" href="services.html">Послуги</a>
+        <a class="nav-link is-active" href="calculator.html">Калькулятор</a>
+        <a class="nav-link" href="about.html">Про компанію</a>
+        <a class="nav-link" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="section-title">Калькулятор страхового платежу</h1>
+          <p class="section-subtitle">
+            Оберіть тип страхування, вкажіть термін і суму страхування, додайте необхідні опції та отримайте орієнтовну вартість поліса.
+          </p>
+        </div>
+
+        <div class="card">
+          <form id="calcForm" class="form">
+            <div class="field">
+              <label class="label" for="insuranceType">Тип страхування</label>
+              <select id="insuranceType" class="select"></select>
+            </div>
+
+            <div id="subTypeWrap" class="field">
+              <label class="label" for="subType">Об’єкт страхування</label>
+              <select id="subType" class="select"></select>
+            </div>
+
+            <div class="field">
+              <label class="label" for="termMonths">Термін страхування (місяці)</label>
+              <select id="termMonths" class="select"></select>
+            </div>
+
+            <div class="field">
+              <label class="label" for="insuredSum">Сума страхування (грн)</label>
+              <input id="insuredSum" class="input" type="number" min="1" placeholder="Введіть суму страхування" required />
+            </div>
+
+            <div id="optionsWrap" class="field">
+              <div class="label">Додаткові опції</div>
+              <div id="optionsList" class="checklist"></div>
+            </div>
+
+            <div class="field">
+              <button type="submit" class="btn btn-primary">Розрахувати</button>
+            </div>
+          </form>
+
+          <div id="resultBlock" class="result hidden">
+            <p class="result-title">Орієнтовна вартість поліса</p>
+            <p id="resultValue" class="result-value">0.00 грн</p>
+            <p id="resultNote" class="result-note"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">Your Safe Life</div>
+        <div class="footer-meta">Страхова компанія, м. Київ (з 2020 року)</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Контакти</div>
+        <div class="footer-line">Тел.: +380998370887</div>
+        <div class="footer-line">Email: your.safelife@gmail.com</div>
+        <div class="footer-line">Адреса: м. Київ, вул. Рятувальна, 12</div>
+        <div class="footer-line">Години роботи: 10:00–20:00</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Авторство</div>
+        <div class="footer-line">Корнєва Вікторія Дмитрівна</div>
+        <div class="footer-line">Група: ФЕМП 3-13</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 Your Safe Life. Навчальний проєкт.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

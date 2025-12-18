@@ -1,0 +1,185 @@
+<!-- Сайт розроблено студенкою Корнєвою Вікторією Дмитрівною, група ФЕМП 3-13 -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Страхування майна — Your Safe Life</title>
+  <meta name="description" content="Страхування майна від Your Safe Life: автомобілі, квартири, будинки, обладнання, товар, техніка. Онлайн калькулятор вартості поліса." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <span class="brand-name">Your Safe Life</span>
+          <span class="brand-tagline">страхові рішення для життя без зайвих ризиків</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Головна</a>
+        <a class="nav-link is-active" href="services.html">Послуги</a>
+        <a class="nav-link" href="calculator.html">Калькулятор</a>
+        <a class="nav-link" href="about.html">Про компанію</a>
+        <a class="nav-link" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card hero-card">
+          <div class="hero-content">
+            <p class="eyebrow">Послуга</p>
+            <h1 class="hero-title">Страхування майна</h1>
+            <p class="hero-subtitle">
+              Захистіть майно від основних ризиків: пошкодження, втрати або знищення.
+              Поліс дозволяє застрахувати транспортні засоби, житлову та комерційну нерухомість,
+              обладнання, товарні запаси та техніку.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#calculator">Розрахувати вартість</a>
+              <a class="btn btn-ghost" href="services.html">Усі послуги</a>
+            </div>
+
+            <div class="hero-badges">
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">термін 1–48 місяців</span>
+              </div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">франшиза 2%</span>
+              </div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">додаткові опції</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="media-frame">
+              <img class="media-img" src="img/property-banner.jpg" alt="Страхування майна" />
+            </div>
+            <p class="media-note">Зображення: заміни файл <strong>img/property-banner.jpg</strong> на власний.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <div class="card service-card">
+            <h3 class="card-title">Що можна застрахувати</h3>
+            <p class="card-text">
+              Автомобілі та інші транспортні засоби, квартири, будинки, обладнання, товарні запаси,
+              побутову та офісну техніку.
+            </p>
+          </div>
+
+          <div class="card service-card">
+            <h3 class="card-title">Основні ризики</h3>
+            <p class="card-text">
+              Пожежа, затоплення, крадіжка, стихійні лиха та інші непередбачувані події,
+              що можуть призвести до матеріальних збитків.
+            </p>
+          </div>
+
+          <div class="card service-card">
+            <h3 class="card-title">Умови поліса</h3>
+            <p class="card-text">
+              Термін страхування — від 1 до 48 місяців. Безумовна франшиза — 2%.
+              Вартість поліса залежить від типу майна, суми та обраних опцій.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Калькулятор страхування майна</h2>
+          <p class="section-subtitle">
+            Оберіть об’єкт страхування, термін та суму — і отримайте орієнтовну вартість поліса.
+          </p>
+        </div>
+
+        <div class="card">
+          <form id="calcForm" class="form">
+            <input type="hidden" id="insuranceType" value="property" />
+
+            <div id="subTypeWrap" class="field">
+              <label class="label" for="subType">Об’єкт страхування</label>
+              <select id="subType" class="select"></select>
+            </div>
+
+            <div class="field">
+              <label class="label" for="termMonths">Термін страхування (місяці)</label>
+              <select id="termMonths" class="select"></select>
+            </div>
+
+            <div class="field">
+              <label class="label" for="insuredSum">Сума страхування (грн)</label>
+              <input id="insuredSum" class="input" type="number" min="1" placeholder="Введіть суму страхування" required />
+            </div>
+
+            <div class="field">
+              <div class="label">Додаткові опції</div>
+              <div id="optionsList" class="checklist"></div>
+            </div>
+
+            <div class="field">
+              <button type="submit" class="btn btn-primary">Розрахувати</button>
+            </div>
+          </form>
+
+          <div id="resultBlock" class="result hidden">
+            <p class="result-title">Орієнтовна вартість поліса</p>
+            <p id="resultValue" class="result-value">0.00 грн</p>
+            <p id="resultNote" class="result-note"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">Your Safe Life</div>
+        <div class="footer-meta">Страхова компанія, м. Київ (з 2020 року)</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Контакти</div>
+        <div class="footer-line">Тел.: +380998370887</div>
+        <div class="footer-line">Email: your.safelife@gmail.com</div>
+        <div class="footer-line">Адреса: м. Київ, вул. Рятувальна, 12</div>
+        <div class="footer-line">Години роботи: 10:00–20:00</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Авторство</div>
+        <div class="footer-line">Корнєва Вікторія Дмитрівна</div>
+        <div class="footer-line">Група: ФЕМП 3-13</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 Your Safe Life. Навчальний проєкт.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

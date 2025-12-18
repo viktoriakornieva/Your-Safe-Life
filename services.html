@@ -1,0 +1,181 @@
+<!-- Сайт розроблено студенкою Корнєвою Вікторією Дмитрівною, група ФЕМП 3-13 -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Послуги — Your Safe Life</title>
+  <meta name="description" content="Послуги страхової компанії Your Safe Life: страхування майна, здоров’я та туристичне страхування. Опис, опції та перехід до калькулятора." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Your Safe Life — головна">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <span class="brand-name">Your Safe Life</span>
+          <span class="brand-tagline">страхові рішення для життя без зайвих ризиків</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Головна навігація">
+        <a class="nav-link" href="index.html">Головна</a>
+        <a class="nav-link is-active" href="services.html">Послуги</a>
+        <a class="nav-link" href="calculator.html">Калькулятор</a>
+        <a class="nav-link" href="about.html">Про компанію</a>
+        <a class="nav-link" href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card hero-card">
+          <div class="hero-content">
+            <p class="eyebrow">Послуги компанії Your Safe Life</p>
+            <h1 class="hero-title">Обирайте напрям страхування під вашу задачу.</h1>
+            <p class="hero-subtitle">
+              Ми пропонуємо три ключові продукти: страхування майна, страхування здоров’я та туристичне страхування.
+              Кожен продукт має базове покриття та набір опцій, які можна додати до поліса.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="calculator.html">Перейти до калькулятора</a>
+              <a class="btn btn-ghost" href="contacts.html">Поставити запитання</a>
+            </div>
+
+            <div class="hero-badges" aria-label="Переваги">
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">3 продукти</span>
+              </div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">термін 1–48 місяців</span>
+              </div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">розрахунок онлайн</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-label="Банер-ілюстрація">
+            <div class="media-frame">
+              <img class="media-img" src="img/services-banner.jpg" alt="Послуги Your Safe Life" />
+              <div class="media-overlay">
+                <div class="media-stat">
+                  <div class="media-stat-number">1–48</div>
+                  <div class="media-stat-label">місяців — термін поліса</div>
+                </div>
+                <div class="media-stat">
+                  <div class="media-stat-number">2%</div>
+                  <div class="media-stat-label">франшиза (умова виплат)</div>
+                </div>
+              </div>
+            </div>
+            <p class="media-note">Зображення: заміни файл <strong>img/services-banner.jpg</strong> на власний.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Каталог послуг</h2>
+          <p class="section-subtitle">Натисніть “Детальніше”, щоб прочитати умови та скористатися калькулятором на сторінці продукту.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card service-card">
+            <h3 class="card-title">Страхування майна</h3>
+            <p class="card-text">
+              Підходить для автомобілів і транспортних засобів, квартир, будинків, обладнання, товарів і техніки.
+              Можна додати опції: пожежа, затоплення, крадіжка, стихійні лиха.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-secondary" href="service-property.html">Детальніше</a>
+              <a class="btn btn-link" href="calculator.html?type=property">Розрахувати</a>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <h3 class="card-title">Страхування здоров’я</h3>
+            <p class="card-text">
+              Продукт для базового медичного захисту з можливістю додати розширення: стоматологія, стаціонар, телемедицина, вакцинація.
+              Розрахунок вартості — за сумою та терміном.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-secondary" href="service-health.html">Детальніше</a>
+              <a class="btn btn-link" href="calculator.html?type=health">Розрахувати</a>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <h3 class="card-title">Туристичне страхування</h3>
+            <p class="card-text">
+              Поліс для подорожей з корисними опціями: активний спорт, багаж, скасування поїздки, медична евакуація.
+              Підходить для планування витрат на страхування перед поїздкою.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-secondary" href="service-travel.html">Детальніше</a>
+              <a class="btn btn-link" href="calculator.html?type=travel">Розрахувати</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container">
+        <div class="card cta-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Хочете порівняти варіанти?</h2>
+            <p class="cta-text">
+              Використовуйте універсальний калькулятор, щоб швидко оцінити орієнтовну вартість поліса для різних продуктів і термінів.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="calculator.html">Відкрити калькулятор</a>
+            <a class="btn btn-secondary" href="about.html">Про компанію</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">Your Safe Life</div>
+        <div class="footer-meta">Страхова компанія, м. Київ (з 2020 року)</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Контакти</div>
+        <div class="footer-line">Тел.: +380998370887</div>
+        <div class="footer-line">Email: your.safelife@gmail.com</div>
+        <div class="footer-line">Адреса: м. Київ, вул. Рятувальна, 12</div>
+        <div class="footer-line">Години роботи: 10:00–20:00</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-title">Авторство</div>
+        <div class="footer-line">Корнєва Вікторія Дмитрівна</div>
+        <div class="footer-line">Група: ФЕМП 3-13</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 Your Safe Life. Навчальний проєкт.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
